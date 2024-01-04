@@ -5,7 +5,6 @@ namespace App\Http\Controllers\API\Auth;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\API\Auth\LoginRequest;
 use App\Models\User;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 
 /**
@@ -25,7 +24,6 @@ class LoginController extends Controller
      *
      * @unauthenticated
      *
-     * @param  LoginRequest $request
      * @return \Illuminate\Http\JsonResponse
      */
     public function postLogin(LoginRequest $request)
@@ -48,7 +46,7 @@ class LoginController extends Controller
             'data' => [
                 'token' => $token,
                 'user' => $user,
-            ]
+            ],
         ], 200);
     }
 }

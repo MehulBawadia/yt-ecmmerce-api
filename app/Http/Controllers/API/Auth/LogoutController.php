@@ -21,7 +21,6 @@ class LogoutController extends Controller
      *
      * @authenticated
      *
-     * @param  \Illuminate\Http\Request $request
      * @return \Illuminate\Http\JsonResponse
      */
     public function delete(Request $request)
