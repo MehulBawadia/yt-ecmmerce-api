@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Hash;
  *
  * @subgroup Authentication
  *
- * @subgroupDescription The login endpoint for all users.
+ * @subgroupDescription The login and logout endpoints for all users.
  */
 class LoginController extends Controller
 {
